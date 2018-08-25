@@ -1,0 +1,18 @@
+{
+    "AS_AppEvents_dc07963ebcf64ff4a853ccb4f3ce89df": {
+        "id": "AS_AppEvents_dc07963ebcf64ff4a853ccb4f3ce89df",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f884f19f57b04cfa84b92410a6d7538c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "initializeMF();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

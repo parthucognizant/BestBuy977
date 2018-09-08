@@ -1,7 +1,7 @@
 //startup.js file
 var appConfig = {
     appId: "BestBuy977",
-    appName: "BestBuy977",
+    appName: "BB",
     appVersion: "1.0.0",
     platformVersion: null,
     serverIp: "10.20.22.63",

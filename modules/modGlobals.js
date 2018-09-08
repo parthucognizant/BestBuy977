@@ -9,3 +9,6 @@ var MF = {
   integrationService : "BestBuy790",
   operations : ["CategoriesList"]
 };
+
+var offlineCategories = {};
+var categoriesList = [];

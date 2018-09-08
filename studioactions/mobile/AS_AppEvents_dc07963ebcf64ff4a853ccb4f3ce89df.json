@@ -10,7 +10,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__f884f19f57b04cfa84b92410a6d7538c",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "initializeMF();",
+            "codeSnippet": "kony.lang.setUncaughtExceptionHandler(uncaughtExceptionHandler);\ninitializeMF();",
             "parentId": null,
             "callbackType": null
         }]

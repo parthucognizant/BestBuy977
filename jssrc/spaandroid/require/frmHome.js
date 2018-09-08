@@ -78,8 +78,8 @@ define("frmHome", function() {
                 "pageOffDotImage": "pageoffdot.png",
                 "pageOnDotImage": "pageondot.png",
                 "retainSelection": false,
-                "rowFocusSkin": "seg2Focus",
-                "rowSkin": "seg2Normal",
+                "rowFocusSkin": "sknRowBG",
+                "rowSkin": "sknRowBG",
                 "rowTemplate": "flxCategories",
                 "scrollingEvents": {},
                 "sectionHeaderSkin": "sliPhoneSegmentHeader",
@@ -102,7 +102,34 @@ define("frmHome", function() {
                 "paddingInPixel": false
             }, {});
             flxMain.add(flxFormHeader, lblNvigation, segCategories);
-            this.add(flxMain);
+            var flxLoadingindicator = new kony.ui.FlexContainer({
+                "autogrowMode": kony.flex.AUTOGROW_NONE,
+                "clipBounds": true,
+                "height": "100%",
+                "id": "flxLoadingindicator",
+                "isVisible": false,
+                "layoutType": kony.flex.FREE_FORM,
+                "left": "0%",
+                "skin": "slFbox",
+                "top": "0%",
+                "width": "100%",
+                "zIndex": 10
+            }, {}, {});
+            flxLoadingindicator.setDefaultUnit(kony.flex.DP);
+            var Loading = new BestBuy.Loading({
+                "clipBounds": true,
+                "height": "100%",
+                "id": "Loading",
+                "isVisible": true,
+                "layoutType": kony.flex.FREE_FORM,
+                "left": "0dp",
+                "masterType": constants.MASTER_TYPE_USERWIDGET,
+                "skin": "sknFlxBlockBG",
+                "top": "0dp",
+                "width": "100%"
+            }, {}, {});
+            flxLoadingindicator.add(Loading);
+            this.add(flxMain, flxLoadingindicator);
         };
         return [{
             "addWidgets": addWidgetsfrmHome,

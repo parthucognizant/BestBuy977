@@ -1,0 +1,57 @@
+{
+    "classname": "Loading",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "de5b962ce933419a9df55fa34995f62a",
+                    "paramList": [
+                        {
+                            "name": "message"
+                        },
+                        {
+                            "name": "view"
+                        },
+                        {
+                            "name": "visible"
+                        },
+                        {
+                            "name": "callBack"
+                        }
+                    ],
+                    "propertyKey": "showLoading",
+                    "pw": {
+                        "displayName": "showLoading",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa3b772469a945e28b74614204e60524",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "BestBuy",
+    "version": "1.0.0"
+}

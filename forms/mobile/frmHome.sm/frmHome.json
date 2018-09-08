@@ -31,7 +31,8 @@
     "bounces": false,
     "canUpdateUI": true,
     "children": [
-        "flxMain"
+        "flxMain",
+        "flxLoadingindicator"
     ],
     "containerweight": 100,
     "controllerInfo": {

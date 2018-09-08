@@ -64,7 +64,7 @@
     <attributes name="win8bgagentnamespace" value=""/>
     <attributes name="apmgestureswipe" value=""/>
     <attributes name="andweartargetsdkkey" value="7.1 (25)"/>
-    <attributes name="appnamekey" value="BestBuy977"/>
+    <attributes name="appnamekey" value="BB"/>
     <attributes name="currentgaversion" value="8.2.0.v201804101424"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="enablelocalnotificationsandroidwear" value="false"/>
@@ -158,7 +158,7 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
-    <attributes name="lastmodifiedtime" value="1535177649671"/>
+    <attributes name="lastmodifiedtime" value="1536406160193"/>
     <attributes name="ipad_notificationicon_1x_20" value=""/>
     <attributes name="iphone_spotlighticon_2x_40" value=""/>
     <attributes name="wp10microphone" value="false"/>
@@ -297,7 +297,7 @@
     <attributes name="fbxfolderpathkey" value=""/>
     <attributes name="wp10packagedisplaynamekey" value="BestBuy977"/>
     <attributes name="statusBarStyle" value="STATUS_BAR_STYLE_DEFAULT"/>
-    <attributes name="desktopwebtitle" value=""/>
+    <attributes name="desktopwebtitle" value="BB"/>
     <attributes name="ANDROIDWEAR_SET_TIME" value="false"/>
     <attributes name="CLEAR_APP_USER_DATA" value="false"/>
     <attributes name="wp10musicLibrary" value="false"/>
@@ -451,7 +451,7 @@
     <attributes name="cloud_web_xml_custom_others" value=""/>
     <attributes name="SET_ORIENTATION" value="false"/>
     <attributes name="_sys_use_consumer_push" value="false"/>
-    <attributes name="apptitle" value=""/>
+    <attributes name="apptitle" value="BB"/>
     <attributes name="WP8_ID_CAP_ISV_CAMERA" value="true"/>
     <attributes name="wp10tileUpdateRecurrenceKey" value=""/>
     <attributes name="ANDROIDWEAR_SIGNAL_PERSISTENT_PROCESSES" value="false"/>
@@ -595,7 +595,7 @@
     <attributes name="win8lockscreennotificationskey" value="Not set"/>
     <attributes name="WP8_ID_CAP_WALLET_PAYMENTINSTRUMENTS" value="false"/>
     <attributes name="ID_CAP_APPOINTMENTS" value="true"/>
-    <attributes name="applogokey" value=""/>
+    <attributes name="applogokey" value="0=bestbuy.png,1=,8=,50=,42=,16=,18=,48=,43=,1000=,1001=,1002=,9999=,21=,9998=,9997="/>
     <attributes name="ANDROIDWEAR_RECORD_AUDIO" value="false"/>
     <attributes name="camerasettings" value=""/>
     <attributes name="WP8_ID_CAP_NETWORKING" value="true"/>

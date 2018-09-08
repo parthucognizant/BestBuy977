@@ -2,9 +2,10 @@ function isNetworkAvailable() {
   return kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY);
 }
 
-function showLoading() {
+function showLoading(loadingMessage) {
   kony.print("Util>> showLoading");
-  kony.application.showLoadingScreen("", "Loading", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, null);
+  loadingMessage = loadingMessage || "Loading";
+  kony.application.showLoadingScreen("", loadingMessage, constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, null);
 }
 
 function dismissLoading() {
@@ -24,4 +25,18 @@ function initializeMF(){
   }else{
     kony.print("MF INIT>> Network not availeble");
   }
+}
+
+function uncaughtExceptionHandler(exceptionObject) {
+  kony.print("Util>> Unhandled Exception:" + JSON.stringify(exceptionObject));
+  kony.print("Util>> Unhandled Exception without stringify:" + exceptionObject);
+}
+
+function isThinClient(){
+  var deviceInf0 = kony.os.deviceInfo();
+  kony.print("Util>> Name of client::"+deviceInf0.name);
+  if(deviceInf0.name === "thinclient"){
+    return true;
+  }
+  return false;
 }

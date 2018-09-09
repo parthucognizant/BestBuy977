@@ -11,6 +11,12 @@ define(function() {
         defineGetter(this, "flxBackIsVisible", function() {
             return this.view.flxback.isVisible;
         });
+        defineSetter(this, "flxSearchIsVisible", function(val) {
+            this.view.flxSearch.isVisible = val;
+        });
+        defineGetter(this, "flxSearchIsVisible", function() {
+            return this.view.flxSearch.isVisible;
+        });
         if (this.initGettersSetters) {
             this.initGettersSetters.apply(this, arguments);
         }

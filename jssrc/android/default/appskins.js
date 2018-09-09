@@ -4,9 +4,14 @@ function skinsInit() {
     seg2Focus = "seg2Focus";
     seg2Normal = "seg2Normal";
     sknFlxBlockBG = "sknFlxBlockBG";
+    sknFlxBlueBG = "sknFlxBlueBG";
     sknFlxWhite = "sknFlxWhite";
+    sknFlxWhiteBGBlackBorder = "sknFlxWhiteBGBlackBorder";
     sknFormBackgroundBlue = "sknFormBackgroundBlue";
     sknLblBlack120Calibri = "sknLblBlack120Calibri";
+    sknLblBlack130 = "sknLblBlack130";
+    sknLblRed120 = "sknLblRed120";
+    sknLblRed130 = "sknLblRed130";
     sknRowBG = "sknRowBG";
     slDynamicNotificationForm = "slDynamicNotificationForm";
     slFbox = "slFbox";

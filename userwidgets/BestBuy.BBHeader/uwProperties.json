@@ -73,6 +73,25 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "d269fce6953d4a06a7b46bdc369e3583"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c5f45803e3124b54aac5505ab8934cf0",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 2,
+                    "propertyKey": "flxSearchIsVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "flxSearchIsVisible",
+                        "srcWidget": "flxSearch",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "jacfbaabaeb24ecf8ae1c614e479ce6d"
                 }
             ]
         },

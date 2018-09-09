@@ -10,7 +10,8 @@ define(function() {
                 callBack();
                 kony.print("Loading>> Loading message and visiblility::" + message + " and " + visible);
             } else {
-                showLoading(message);
+                if (visible) showLoading(message);
+                else dismissLoading();
                 kony.print("Loading>> Loading message::" + message);
             }
         }

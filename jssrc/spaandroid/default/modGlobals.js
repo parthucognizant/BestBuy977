@@ -7,7 +7,8 @@ var MF = {
     isMFInitialized: false,
     MFObject: null,
     integrationService: "BestBuy790",
-    operations: ["CategoriesList"]
+    operations: ["CategoriesList", "ProductsList"]
 };
 var offlineCategories = {};
+var offlineProducts = {};
 var categoriesList = [];

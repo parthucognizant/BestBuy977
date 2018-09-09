@@ -14,10 +14,12 @@ define({
   homePagePreshow : function(data){
 	kony.print("Categories>> Entented into category preshow");
     this.view.BBHeader.flxBackIsVisible = (data && data === "back") ? true : false;
-    this.categoryId = "cat00000";
-    this.onClickData = "";
-    this.catgoryExist = false;
-    this.getCategories("initial");
+    if(data !== "back"){
+      this.categoryId = "cat00000";
+      this.onClickData = "";
+      this.catgoryExist = false;
+      this.getCategories("initial");
+    }
   },
   forceLayoutForm : function(){
     this.view.forceLayout();
@@ -58,6 +60,7 @@ define({
       kony.print("Categories>> No subcategories in the response");
       if(timeOfCalling !== "initial" && !isCallingFromBack)
       this.setHomePageValues();
+      this.getProducts();
     }
   },
   getCategoriesFailure : function(error){
@@ -118,5 +121,29 @@ define({
     };
     var animationDefObject={definition:transformDef,config:animationConfig};
     this.view.segCategories.setAnimations({visible:animationDefObject});
+  },
+  getProducts : function(){
+    if(isNetworkAvailable() && MF.isMFInitialized){
+      this.view.Loading.showLoading("Fetching Products...",this.view.flxLoadingindicator,true,this.forceLayoutForm);
+      kony.print("Categories>> Serive name::"+MF.integrationService);
+      kony.print("Categories>> Operation name::"+MF.operations[1]);
+      var integrationObj = MF.MFObject.getIntegrationService(MF.integrationService);
+      var data = {"catId" : this.categoryId};
+      integrationObj.invokeOperation(MF.operations[1], "", data, this.getProductsSuccess, this.getProductsFailure);
+    }
+  },
+  getProductsSuccess : function(success){
+    this.view.Loading.showLoading("Fetching Products...",this.view.flxLoadingindicator,false,this.forceLayoutForm);
+    kony.print("Categories>> Products success Response::"+JSON.stringify(success));
+    offlineProducts = {};
+    if(success && success.opstatus === 0 && success.productsList){
+      offlineProducts = success;
+      var productNavigation = new kony.mvc.Navigation("frmProducts");
+      productNavigation.navigate([success, this.onClickData]);
+    }
+  },
+  getProductsFailure : function(error){
+    this.view.Loading.showLoading("Fetching Products...",this.view.flxLoadingindicator,false,this.forceLayoutForm);
+    kony.print("Categories>> Products success Response::"+JSON.stringify(error));
   }
 });

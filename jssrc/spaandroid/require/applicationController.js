@@ -1,5 +1,6 @@
 define({
     AS_AppEvents_dc07963ebcf64ff4a853ccb4f3ce89df: function AS_AppEvents_dc07963ebcf64ff4a853ccb4f3ce89df(eventobject) {
+        var self = this;
         kony.lang.setUncaughtExceptionHandler(uncaughtExceptionHandler);
         initializeMF();
     },
@@ -20,6 +21,7 @@ define({
         kony.mvc.registry.add("flxCategories", "flxCategories", "flxCategoriesController");
         kony.mvc.registry.add("flxProducts", "flxProducts", "flxProductsController");
         kony.mvc.registry.add("frmHome", "frmHome", "frmHomeController");
+        kony.mvc.registry.add("frmProductDetails", "frmProductDetails", "frmProductDetailsController");
         kony.mvc.registry.add("frmProducts", "frmProducts", "frmProductsController");
         setAppBehaviors();
     },

@@ -62,7 +62,7 @@ define({
             this.catgoryExist = false;
             kony.print("Categories>> No subcategories in the response");
             if (timeOfCalling !== "initial" && !isCallingFromBack) this.setHomePageValues();
-            this.getProducts();
+            if (!isCallingFromBack) this.getProducts();
         }
     },
     getCategoriesFailure: function(error) {

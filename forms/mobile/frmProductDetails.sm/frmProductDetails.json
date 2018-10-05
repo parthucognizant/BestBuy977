@@ -31,14 +31,13 @@
     "bounces": false,
     "canUpdateUI": true,
     "children": [
-        "flxMain",
-        "flxLoadingindicator"
+        "flxMain"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmProductsController"
+            "name": "frmProductDetailsController"
         }
     },
     "currentLocale": "default",
@@ -48,7 +47,7 @@
     "device": "iPhoneX",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmProducts",
+    "id": "frmProductDetails",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -66,7 +65,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "hf5e24c0d9b1419c9af940ac250d6f9b",
+                "kuid": "i8054a50606f4a5c8067138806322bd5",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -77,7 +76,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "gc7c7f9682374f1dac22d7c30b459640",
+                        "kuid": "f283640898474d8c9719686c33360f9a",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -94,7 +93,7 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "d2556590cd474b01b29847c67d8e5660",
+    "kuid": "ce46cec2591b4c75b9372bae821dc257",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,

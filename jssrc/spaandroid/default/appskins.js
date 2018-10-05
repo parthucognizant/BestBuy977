@@ -8,6 +8,8 @@ function skinsInit() {
     sknFlxWhite = "sknFlxWhite";
     sknFlxWhiteBGBlackBorder = "sknFlxWhiteBGBlackBorder";
     sknFormBackgroundBlue = "sknFormBackgroundBlue";
+    sknLblBlack100 = "sknLblBlack100";
+    sknLblBlack110 = "sknLblBlack110";
     sknLblBlack120Calibri = "sknLblBlack120Calibri";
     sknLblBlack130 = "sknLblBlack130";
     sknLblRed120 = "sknLblRed120";
@@ -16,6 +18,7 @@ function skinsInit() {
     slDynamicNotificationForm = "slDynamicNotificationForm";
     slFbox = "slFbox";
     slForm = "slForm";
+    slFSbox = "slFSbox";
     slImage = "slImage";
     sliPhoneSegmentHeader = "sliPhoneSegmentHeader";
     slPopup = "slPopup";

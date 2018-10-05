@@ -12,7 +12,7 @@ define({
     this.view.flxLoadingindicator.onClick = function(){};
   },
   homePagePreshow : function(data){
-	kony.print("Categories>> Entented into category preshow");
+    kony.print("Categories>> Entented into category preshow");
     this.view.BBHeader.flxBackIsVisible = (data && data === "back") ? true : false;
     if(data !== "back"){
       this.categoryId = "cat00000";
@@ -54,13 +54,14 @@ define({
       this.setCategoriesData(success.subCategories);
       offlineCategories[this.categoryId] = success;
       if(timeOfCalling !== "initial" && !isCallingFromBack)
-      this.setHomePageValues();
+        this.setHomePageValues();
     }else{
       this.catgoryExist = false;
       kony.print("Categories>> No subcategories in the response");
       if(timeOfCalling !== "initial" && !isCallingFromBack)
-      this.setHomePageValues();
-      this.getProducts();
+        this.setHomePageValues();
+      if(!isCallingFromBack)
+        this.getProducts();
     }
   },
   getCategoriesFailure : function(error){
